@@ -1,0 +1,43 @@
+==================================================
+  INTELLIDOC AGENT - EXACT ANSWERS TEMPLATE
+==================================================
+
+Use these answers to demonstrate the Agent's 
+Learning and Feedback capabilities (Phase 2).
+
+--------------------------------------------------
+STEP 1: Run the Agent
+--------------------------------------------------
+Command: python agentic_image_to_word.py img1.png
+
+--------------------------------------------------
+STEP 2: Answer the Questions
+--------------------------------------------------
+
+Q1. Are you satisfied with the overall document output?
+    Answer: y
+
+Q2. Did the agent misread any word? (OCR correction)
+    Answer: 1
+    (The agent will then ask: "What should it be corrected to?")
+    Follow-up Answer: l
+
+Q3. Was any heading incorrectly formatted as body text?
+    Answer: n
+
+Q4. Do you want to teach the agent another word correction?
+    Answer: wrong
+    (The agent will then ask: "What should it be corrected to?")
+    Follow-up Answer: right
+
+Q5. Final step — do you approve this document for use?
+    Answer: y
+
+--------------------------------------------------
+RESULT
+--------------------------------------------------
+The agent will create a file named:
+"img1_Agentic_[TIMESTAMP]_Final.docx"
+
+This file will contain your exact corrections!
+==================================================
